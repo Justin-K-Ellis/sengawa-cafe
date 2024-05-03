@@ -7,63 +7,134 @@
     <title>Sengawa Cafe</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#"></a>About</li>
-        <li><a href="#"></a>Reviews</li>
-        <li><a href="#"></a>Location</li>
-        <li><a href="#"></a>Contact</li>
+    <nav class="bg-blue-500 text-white flex flex-row justify-between p-8">
+      <h1 class="text-3xl font-extrabold">Sengawa Cafe</h1>
+      <ul class="flex flex-row gap-x-4">
+        <li class="hover:opacity-75"><a href="#"></a>About</li>
+        <li class="hover:opacity-75"><a href="#"></a>Reviews</li>
+        <li class="hover:opacity-75"><a href="#"></a>Location</li>
+        <li class="hover:opacity-75"><a href="#"></a>Contact</li>
       </ul>
     </nav>
 
-    <header>
-      <div>
-        <p>The best coffee in Chofu</p>
-        <p>
-          Discover a world of flavors in every sip at Sengawa Coffee, where
-          passion meets perfection. Join us for a coffee journey that awakens
-          the senses and warms the soul.
-        </p>
+    <header class="bg-blue-800 text-white py-8">
+      <div class="w-9/12 flex flex-row mx-auto gap-x-6">
+        <div class="p-8 flex flex-col gap-2 justify-center">
+          <p class="text-xl">The best coffee in Chofu</p>
+          <p>
+            Discover a world of flavors in every sip at Sengawa Coffee, where
+            passion meets perfection. Join us for a coffee journey that awakens
+            the senses and warms the soul.
+          </p>
+        </div>
+        <div class="max-w-md">
+          <img
+            class="w-full rounded-md border-white border-2 border-solid shadow"
+            src="./img/main_coffee.jpg"
+            alt="a coffee cup and a notebook on a wooden table"
+          />
+        </div>
       </div>
-      <img src="" alt="a coffee cup and a notebook on a wooden table" />
     </header>
 
     <main>
       <section id="about">
-        <p>What We Offer</p>
-        <div>
-          <div>
-            <img src="" alt="" />
-            <p>Enjoy the finest fresh coffee</p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <p>Buy roasted beans and brew them at home</p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <p>Sample a variety of brewing techniques</p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <p>A quiet space to work or study</p>
+        <div class="w-9/12 mx-auto p-8">
+          <h2 class="text-2xl font-bold text-center">What We Offer</h2>
+          <div class="flex flex-row m-8 gap-6">
+            <div
+              class="border-gray-400 border-2 border-solid rounded p-2 shadow"
+            >
+              <div class="max-w-sm">
+                <img class="rounded shadow" src="./img/coffee_01.jpg" alt="" />
+              </div>
+              <p class="text-center">Enjoy the finest fresh coffee</p>
+            </div>
+
+            <div
+              class="border-gray-400 border-2 border-solid rounded p-2 shadow"
+            >
+              <div class="max-w-sm">
+                <img class="rounded shadow" src="./img/coffee_02.jpg" alt="" />
+              </div>
+              <p class="text-center">Buy roasted beans and brew them at home</p>
+            </div>
+
+            <div
+              class="border-gray-400 border-2 border-solid rounded p-2 shadow"
+            >
+              <div class="max-w-sm">
+                <img class="rounded shadow" src="./img/coffee_03.jpg" alt="" />
+              </div>
+              <p class="text-center">Sample a variety of brewing techniques</p>
+            </div>
+
+            <div
+              class="border-gray-400 border-2 border-solid rounded p-2 shadow"
+            >
+              <div class="max-w-sm">
+                <img class="rounded shadow" src="./img/coffee_04.jpg" alt="" />
+              </div>
+              <p class="text-center">A quiet space to work or study</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="reviews">
-        <blockquote></blockquote>
-        <blockquote></blockquote>
+      <section id="reviews" class="bg-stone-300">
+        <div class="p-8">
+          <h2 class="text-2xl font-bold text-center mb-4">Reviews</h2>
+          <div class="w-9/12 mx-auto flex flex-row gap-6">
+            <blockquote class="w-1/2 bg-stone-50 rounded shadow p-2">
+              <p>
+                Sengawa Coffee serves a harmonious blend of rich flavors and warm
+                ambiance. Every sip feels like a comforting embrace in this cozy
+                cafe nook.
+              </p>
+              <cite>The Nishi Tokyo Review</cite>
+            </blockquote>
+            <blockquote class="w-1/2 bg-stone-50 rounded shadow p-2"">
+              <p>
+                Sengawa Coffee offers a delightful escape with its cozy ambiance
+                and aromatic brews, making it a perfect spot to unwind or catch up
+                with friends. Their friendly staff and consistently excellent
+                coffee make every visit a pleasure.
+              </p>
+              <cite>Tokyo Beans</cite>
+            </blockquote>
+          </div>
+        </div>
       </section>
-      <section id="location"></section>
-      <section id="contact"></section>
+
+      <section id="location">
+        <div class="w-9/12 mx-auto">
+          <h2 class="text-2xl font-bold text-center mt-6">Where to find us</h2>
+          <div class="p-6">
+            <iframe class="mx-auto rounded-md shadow" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6483.193664787437!2d139.58233337575726!3d35.662303572593316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f1bc6cf56b93%3A0x4e40f669b2c10bad!2sSengawa%20Station!5e0!3m2!1sen!2sjp!4v1714708572661!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+      </section>
+      <section id="contact" class="bg-blue-500 text-white p-8">
+        <h2 class="text-2xl font-bold text-center">Contact Us</h2>
+        <div class="w-9/12 mx-auto flex flex-col justify-center items-center">
+         <div class="flex flex-row gap-2">
+          <p>Email:</p>
+          <p>info@sengawa-cafe.io</p>
+         </div>
+        <div class="flex flex-row gap-2">
+          <p>Phone:</p>
+          <p>000-1234-56789</p>
+        </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p>Copywrite 2024 Justin Klitgaard</p>
-      <p>
-        (This page is for demonstration purposes and Sengawa Cafe is entirely
-        fictional.)
-      </p>
+    <footer class="bg-black text-white">
+      <div class="w-9/12 mx-auto flex flex-col justify-center items-center p-8">
+        <p>Copywrite 2024 Justin Klitgaard</p>
+        <p>
+          (This page is for demonstration purpose. Sengawa Cafe, The Nishi Tokyo Review, and Tokyo Beans are entirely
+          fictional.)
+        </p>
+      </div>
     </footer>
   </body>
 </html>
